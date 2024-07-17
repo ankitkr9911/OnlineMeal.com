@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineMeal.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1245px) " href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="Not available now!">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome To My Online Feast</h1>
+        <p>Discover recipes, cooking tips, and food stories to inspire your culinary journey. Bring the world’s flavors
+            to your table and enjoy cooking with confidence. Join us!</p>
+
+        <button class="btn">Order Food</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="roll.jpg" alt="Not available">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Our Food Catering service offers exquisite cuisine tailored to your event. Enjoy
+                    gourmet meals prepared by top chefs, ensuring a memorable dining experience. Perfect for weddings,
+                    corporate events, and celebrations, we bring culinary excellence to every occasion. </p>
+            </div>
+            <div class="box">
+                <img src="chef.png" alt="Not available">
+                <h2 class="h-secondary center">Virtual Cooking Classes</h2>
+                <p class="center">Join our Virtual Cooking Classes and master culinary skills from the comfort of your
+                    home. Learn from professional chefs through live sessions, interactive tutorials, and step-by-step
+                    recipes. Perfect for all skill levels and food enthusiasts.</p>
+            </div>
+            <div class="box">
+                <img src="delivery.png" alt="Not available">
+                <h2 class="h-secondary center"> Grocery Delivery </h2>
+                <p class="center">Enjoy the convenience of our Grocery Delivery service. Fresh produce, pantry staples,
+                    and household essentials delivered right to your doorstep. Save time and avoid the hassle of
+                    shopping with our fast, reliable, and contactless delivery options.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="clients-item">
+                <img src="google.png" alt="Not Available">
+            </div>
+            <div class="clients-item">
+                <img src="apple.png" alt="Not Available">
+            </div>
+            <div class="clients-item">
+                <img src="microsoft.png" alt="Not Available">
+            </div>
+            <div class="clients-item">
+                <img src="facebook.png" alt="Not Available">
+            </div>
+            <div class="clients-item">
+                <img src="amazon.png" alt="Not Available">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter Your E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone No: </label>
+                    <input type="tel" pattern="[0-9]{10}" name="name" id="number" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.OnlineMeal.com All Rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

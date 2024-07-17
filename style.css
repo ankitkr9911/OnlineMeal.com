@@ -1,0 +1,252 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    /* background-color: blue; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* navbar->logo/image */
+#logo {
+    margin: 6px 15px;
+}
+
+#logo img {
+    margin: 2px 5px;
+    padding: 5px 6px;
+    height: 70px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+
+/* navbar-> list-styling */
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 20px;
+    font-size: 1.6rem;
+    border-radius: 40px;
+    color: white;
+    font-family: "Acme", sans-serif;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: red;
+}
+
+#home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px 200px;
+    height:540px;
+    /* position:relative; */
+    /* background-color: blue; */
+}
+
+/* Introduction of the website i.e home */
+#home h1{
+    text-align:center;
+    color:white;
+    font-family: "Bree Serif", serif;
+}
+
+#home p{
+    text-align: center;
+    color:white;
+    font-size:1.5rem;
+    font-family: "Bree Serif", serif;
+}
+
+#home::before{ 
+    content: "";
+    background: url(cuisine.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 680px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+} 
+
+/* services section */
+
+#services-container h1{
+    padding-bottom:0px;
+}
+
+#services{
+    display:flex;
+    margin:10px;
+    /* border:2px solid brown; */
+    height:500px;
+    margin-top:0px;
+    padding:0px 30px;
+}
+
+#services .box{
+    border:2px solid brown;
+    margin:34px 10px;
+    padding:3px 6px;
+    border-radius:25px;
+    background-color: #f2f2f2;
+}
+
+#services .box img{
+    margin:auto;
+    height:160px;
+    display:block;
+}
+
+#services .box p{
+    font-family: "Bree Serif", serif;
+}
+
+/* clients section */
+
+#client-section{
+    /* height: 350px; */
+    position:relative;
+}
+
+#client-section::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:url(burgers-8743798_640.webp) no-repeat center center/cover;
+    z-index:-1;
+    opacity: 0.5;
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height:124px;
+}
+
+.clients-item{
+    padding:34px;
+}
+
+/* contact section */
+
+#contact h1{
+    height:25px;
+}
+
+#contact{
+    position:relative;
+}
+
+#contact::before{
+    content:"";
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    opacity: 0.6;
+    background: url(contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    /* border:2px solid red; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 20px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 8px;
+    font-size:1rem;
+    font-family: "Bree Serif", serif;
+}
+
+#contact-box form{
+    /* border:2px solid red; */
+    width:40%;
+}
+
+#contact-box label{
+    font-size:1.2rem;
+    font-family: "Bree Serif", serif;
+}
+
+
+/* footer section */
+footer{
+    background:black;
+    color:white;
+    padding:9px 20px;
+    height:15px;
+}
+/* Utility classes */
+.h-primary{
+    font-size:3.4rem;
+    padding:40px;
+    font-family: "Bree Serif", serif;
+}
+
+.h-secondary{
+    font-size:2.1rem;
+    padding:12px;
+    font-family: "Bree Serif", serif;
+}
+
+
+.btn{
+    margin:20px;
+    padding:5px 20px;
+    border:2px solid white;
+    background-color:red;
+    color:white;
+    font-family: "Bree Serif", serif;
+    font-size:1.5rem;
+    border-radius: 20px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: green;
+}
